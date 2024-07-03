@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic Tabbed Interface</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tabs">
+    <button class="btn-gra" onclick="openTab(event, 'tab1')">Sign Up</button>
+    <button class="btn-grad" onclick="openTab(event, 'tab2')">Students</button>
+    <button class="btn-gr" onclick="openTab(event, 'tab3')">About School</button>
+  </div>
+
+  <div id="tab1" class="tab-content">
+    <h2>Sign Up with Gmail</h2>
+    <form>
+      <label for="fname">First Name:</label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last Name:</label><br>
+      <input type="text" id="lname" name="lname"><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+      <input type="submit" value="Sign Up" class="btn-grad">
+    </form>
+  </div>
+
+  <div id="tab2" class="tab-content">
+    <h2>Student Information</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Roll No</th>
+        <th>Section</th>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>101</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>102</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>Emily Johnson</td>
+        <td>103</td>
+        <td>C</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="tab3" class="tab-content">
+    <h2>About Our School</h2>
+    <p>Our school is dedicated to providing the best education possible. We focus on nurturing the intellectual, emotional, and social development of our students, ensuring they become responsible and productive members of society.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
